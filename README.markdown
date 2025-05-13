@@ -51,9 +51,7 @@ DATABASE_URL=jdbc:mysql://localhost:3306/ecommerce
 DATABASE_USERNAME=root
 DATABASE_PASSWORD=admin123
 
-# SMTP (Gmail)
-SPRING_MAIL_USERNAME=<your_gmail_address>
-SPRING_MAIL_PASSWORD=<your_gmail_app_password>
+# SMTP (Gmail) đã được cấu hình sẵn trong file yml
 ```
 
 ### 3. Cấu hình cơ sở dữ liệu
