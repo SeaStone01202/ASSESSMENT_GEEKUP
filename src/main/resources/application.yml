@@ -1,0 +1,40 @@
+spring:
+  application:
+    name: ecommerce
+
+  datasource:
+    url: ${DATABASE_URL:jdbc:mysql://localhost:3306/ecommerce}
+    username: ${DATABASE_USERNAME:root}
+    password: ${DATABASE_PASSWORD:admin123}
+
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
+    hibernate:
+      ddl-auto: update
+
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: haithach.01202@gmail.com
+    password: mqfqrkokdvjwhevk
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+
+# Cấu hình CORS
+cors:
+  allowed-origins: ${CORS_ALLOWED_ORIGIN_1}
+
+# Cấu hình bổ sung để tăng bảo mật
+server:
+  servlet:
+    session:
+      cookie:
+        secure: ${SESSION_COOKIE_SECURE:false}
+        http-only: true
+  port: ${SERVER_PORT:8080}
