@@ -89,17 +89,13 @@ Sử dụng Postman để kiểm tra API `POST /api/orders` (đáp ứng câu e.
 - **Body** (JSON):
   ```json
   {
-    "userId": 1,
-    "addressId": 1,
-    "paymentMethod": "COD",
-    "voucherCode": "DISCOUNT10",
-    "items": [
-      {
-        "variantId": 1,
-        "storeId": 1,
-        "quantity": 2,
-        "unitPrice": 980000.00
-      }
+    "status": 200,
+    "message": "Success",
+    "data": [
+        {
+            "categoryId": 1,
+            "name": "Giày nữ"
+        }
     ]
   }
   ```
